@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <link rel="stylesheet" type ="text/css" href="paint.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="test">
+    <script type="text/javascript" src="paint.js"></script>
+    <nav id="edite_forme">
+        <ul>
+            <li class="edite"><label class="textadapt" for="fill">Intérieur</label> <input class="checkbox" type="checkbox" id="fill" name="fill" value="Bike"></button></li>
+            <li class="edite"><label class="textadapt" for="border">Contour  </label><input class="checkbox" type="checkbox" id="border" name="border" value="Car"></button></li>
+            <li class="edite"><input type="color" id="color" onclick="changeColor()"></li>
+            <li><input class=" valeur " type="text" id="width" placeholder="Width" oninput="changeWidth()"><BR></li>
+            <li><input class=" valeur " type="text" id="height" placeholder="Height" oninput="changeHeight()"><BR></li>
+            <li><input class=" valeur " type="text" id="rayon" placeholder="Radius" oninput="changeRayon()"><BR></li>
+        </ul>
+    </nav>
+    <nav id="edite_texte">
+        <ul>
+            <li class="edite">
+                <select name="police" id="police" oninput="changePolice()">
+                <option class="textadapt" value="serif">Serif</option>
+                <option class="textadapt" value="courier">Courrier</option>
+                <option class="textadapt" value="comic sans ms">Comic sans ms</option>
+                </select></li>
+            <li class="edite">
+                <select name="style" id="style" oninput="changeStyle()">
+                <option class="textadapt" value="italic">Italic</option>
+                <option class="textadapt" value="oblique">Oblique</option>
+                <option class="textadapt" value="normal">Normal</option>
+                </select></li>
+            <li class="edite"> <input class=" valeur " type="number" id="sizeText" placeholder="SizeText" oninput="ChangeSize() "></li>
+            <li class="edite"><label class="textadapt" for="ColorText">Texte</label> <input class="checkbox" type="checkbox" id="ColorText" name="ColorText"></li>
+            <li class="edite"><label class="textadapt" for="ColorSur">Surligner</label> <input class="checkbox" type="checkbox" id="ColorSur" name="ColorSur"></li>
+       </ul>
+    </nav>
+    <section id="outils">
+        <ul class="flex" >
+            <li class="outils"><button class="btn" id="erase" onclick="erase()"><img class="icone" src="./img/erase.png" alt="gomme"></button></li>
+            <li class="outils"><button class="btn" id="square" onclick="addElementrect()"><img class="icone" src="./img/square.png" alt="rectangle"></button></li>
+            <li class="outils"><button class="btn" id="circle" onclick="addElementcircle()"><img class="icone" src="./img/circle.png" alt="cercle"></button></li>
+            <li class="outils"><button class="btn" id="triangle" onclick="addElementtriangle()"><img class="icone" src="./img/triangle.png" alt="triangle"></button></li>
+            <li class="outils"><button class="btn" id="text" onclick="addElementtexte()"><img class="icone" src="./img/text.png" alt="texte"></button></li>
+        </ul>
+    </section>
+    <section id="canva"></section>
+    <section id="dossier">
+        <ul class="flex">
+            <li><button class="btn" onclick="SaveToClient()" ><img class="icone_dosier" src="./img/save.png" alt="save"></button></li>
+            <li><button class="btn"onclick="document.getElementById('file-input').click();"><img class="icone_dosier" src="./img/import.png" alt="import"></button></li>
+            <li><button onclick="generatePDF()" class="btn" id="pdf"><img class="icone_dosier" src="./img/pdf.png" alt="save as pdf"></button></li>
+            <li><button onclick="generatePNG()" class="btn" id="png"><img class="icone_dosier" src="./img/png.png" alt="save as png"></button></li>
+        </ul>
+    </section>
+    <div id="help">
+        <button class="btn" onclick="MenuExplicatif()"><img class="icone" src="./img/help.png" alt="HELP"></button>
+    </div>
+
+    <a id="downloader" style="display:hidden;"></a>
+    <input id="file-input" type="file" name="file" style="display: none;" />
+    
+</body>
+</html>
