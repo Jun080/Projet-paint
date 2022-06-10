@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Aide</title>
+    <link rel="stylesheet" href="./help.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <h1>Utilisation</h1>
+    <p>Bonjour, voici un guide pour vous permettre de comprendre notre outil ! <br> 
+       Comme vous pouvez le voir, notre interface est découpée en 3 barres de navigation :</p>
+       <ul>
+           <li>la barre d'outils (à gauche)</li>
+           <li>la barre d'édition (en haut)</li>
+           <li>la barre de save (à droite)</li>
+       </ul> 
+       <p>Celles si vous seront détaillées ci-dessous.</p>
+    <br>
+    <h2>SOMMAIRE</h2>
+    <ol>
+        <li> <a href="#outils"> Barre d'outils</a></li>
+        <li><a href="#edition"> Barre d'édition</a></li>
+        <li><a href="#save"> Barre de save</a></li></li>
+    </ol>
+    <br>
+    <h2 id="outils">Barre d'outils</h2>
+    <p>Notre barre d'outils se sépare en plusieurs fonctionnalités :</p>
+    <ul>
+        <li><img class="btn" src="./img/erase.png" alt="poubelle"> Efface tout les élèments (textes / formes) présents sur l'écran. Afin de supprimer un element uniquement , double cliquez dessus .</li>
+        <li><img class="btn" src="./img/square.png" alt="carré"> Crée un carré. Il faut d'abord renseigner les dimensions du carré dans la barre d'édition.</li>
+        <li><img class="btn" src="./img/circle.png" alt="cercle"> Crée un cercle. Vous pouvez définir sa taille en lui donnant le radius souhaité.</li>
+        <li><img class="btn" src="./img/triangle.png" alt="triangle"> Crée un triangle. Il faut d'abord renseigner les dimensions du triangle dans la barre d'édition.</li>
+        <li><img class="btn" src="./img/text.png" alt="texte"> Crée une zone de texte dans laquelle vous pouvez écrire.</li>
+    </ul>
+    <br>
+    <h2 id="edition">Barre d'édition</h2>
+    <p>Ici vous retrouverez toutes les options permettant de personnaliser vos formes ainsi que vos textes (elles vous seront expliquées de gauche à droite) : </p>
+    <ul>
+        <li><strong>Police</strong> : Choisissez parmi les 3 polices (Serif, Courrier, Comic Sans MS ) celle que vous souhaitez.</li>
+        <br>
+        <li><strong>Style</strong> : Choisissez le style de votre texte entre "italic", "oblique" et "normal".</li>
+        <br>
+        <li><strong>Taille</strong> : Vous permet de choisir la taille de votre texte avant de créer une zone de texte.</li>
+        <br>
+        <li><strong>Texte / Surligner</strong> : Permet d'appliquer une couleur au texte ou au surlignage. Pour cela cochez la/les case(s) souhaitée(s) puis sélectionnez la couleur voulue avant de cliquer sur la zone de texte que vous souhaitez modifier</li>
+        <br>
+        <li><strong>Intérieur / Contour</strong> : Permet d'appliquer une couleur à l'interieur au ou contour d'une forme. Pour cela cochez la/les case(s) souhaitée(s) puis sélectionnez la couleur voulue avant de cliquer sur la forme que vous souhaitez modifier</li>
+        <br>
+        <li><strong>Couleur</strong> : La palette permet de changer la couleur des textes et des formes. Pour cela se réferer à "Texte / Surligner" pour la couleur du texte et "Intérieur / Contour" pour la couleur des formes.</li>
+        <br>
+        <li><strong>Width / Height</strong> : Renseignez les champs avec respectivement la hauteur et la largeur de la forme. Il faut préciser les dimensions avant de créer un Carré ou un Triangle.</li>
+        <br>
+        <li><strong>Radius</strong> : Indiquez le radius pour modifier le rayon le cercle correspondant</li>
+    </ul>
+    <br>
+    <h2 id="save">Barre de save</h2>
+    <p>Cette barre vous permet d'enregistrer votre chef d'oeuvre en devenir mais aussi d'en importer un autre. Il vous permet aussi de l'enregistrer soit sous format PDF soit sous format PNG.
+    </p>
+    <ul>
+        <li><img class="btn" src="./img/save.png" alt="save">  Permet de sauvegarder votre travail dans un fichier. </li>
+        <li><img class="btn" src="./img/import.png" alt="import">  Permet de charger des formes / textes precédemment sauvegardés. </li>
+        <li><img class="btn" src="./img/pdf.png" alt="pdf"> Permet d'enregistrer la page sous format pdf. Pour utiliser l'exportation en pdf/png il vous faudra "node modules" et "vendor"</li>
+        <li><img class="btn" src="./img/png.png" alt="png"> Créer une capture d'écran de la page et l'enregistre sous format png. Pour utiliser l'exportation en pdf/png il vous faudra "node modules" et "vendor"</li>
+
+    </ul>
+
+</body>
+</html>
